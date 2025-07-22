@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Container Layout */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header */
+header {
+    background-color: #4b8742;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Note Creation Form */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+form:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+form input:focus,
+form textarea:focus {
+    border: 1px solid #4b8742;
+}
+form button {
+    background: #4b8742;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background: #3b6e34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Notes Layout */
+.notes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Individual Note Card */
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+.box h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Delete Button */
+.box button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.box button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .form, .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .notes-grid {
+        justify-content: center;
+    }
 }
