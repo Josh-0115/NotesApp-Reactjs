@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Josh-0115/NotesApp-Reactjs.git/static/css/main.f8f4b46c.css",
-    "main.js": "/Josh-0115/NotesApp-Reactjs.git/static/js/main.bdece838.js",
-    "static/js/453.4c4b8b72.chunk.js": "/Josh-0115/NotesApp-Reactjs.git/static/js/453.4c4b8b72.chunk.js",
-    "index.html": "/Josh-0115/NotesApp-Reactjs.git/index.html",
-    "main.f8f4b46c.css.map": "/Josh-0115/NotesApp-Reactjs.git/static/css/main.f8f4b46c.css.map",
-    "main.bdece838.js.map": "/Josh-0115/NotesApp-Reactjs.git/static/js/main.bdece838.js.map",
-    "453.4c4b8b72.chunk.js.map": "/Josh-0115/NotesApp-Reactjs.git/static/js/453.4c4b8b72.chunk.js.map"
+    "main.css": "/Josh-0115/NotesApp-Reactjs/static/css/main.f8f4b46c.css",
+    "main.js": "/Josh-0115/NotesApp-Reactjs/static/js/main.c9487e0e.js",
+    "static/js/453.4c4b8b72.chunk.js": "/Josh-0115/NotesApp-Reactjs/static/js/453.4c4b8b72.chunk.js",
+    "index.html": "/Josh-0115/NotesApp-Reactjs/index.html",
+    "main.f8f4b46c.css.map": "/Josh-0115/NotesApp-Reactjs/static/css/main.f8f4b46c.css.map",
+    "main.c9487e0e.js.map": "/Josh-0115/NotesApp-Reactjs/static/js/main.c9487e0e.js.map",
+    "453.4c4b8b72.chunk.js.map": "/Josh-0115/NotesApp-Reactjs/static/js/453.4c4b8b72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8f4b46c.css",
-    "static/js/main.bdece838.js"
+    "static/js/main.c9487e0e.js"
   ]
 }
